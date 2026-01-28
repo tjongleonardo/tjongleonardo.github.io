@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nile.com (NileDotCom) — GUI Project Showcase</title>
+</head>
+
+<body>
+  <header>
+    <h1>Nile.com (NileDotCom)</h1>
+    <p><strong>Java Swing Ordering GUI built with Eclipse WindowBuilder</strong></p>
+    <hr />
+  </header>
+
+  <main>
+    <article>
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>
+          <strong>Nile.com (NileDotCom)</strong> is a desktop GUI application built in Java that simulates a simple
+          online ordering workflow. Users can search for items, enter quantities, review item details and subtotals,
+          add multiple items to a cart, and finalize an order. The project emphasizes building a working GUI using
+          <strong>Eclipse WindowBuilder</strong> while connecting UI actions to backend logic like calculations and file output.
+        </p>
+      </section>
+      <section id="Images">
+          <h2>Images</h2>
+          
+      </section>
+
+      <section id="features">
+        <h2>Key Features</h2>
+        <ul>
+          <li>Item lookup/search workflow tied to a button click (event-driven UI)</li>
+          <li>Quantity input, item detail display, and subtotal calculation</li>
+          <li>Multi-item cart display within the GUI</li>
+          <li>Order confirmation and completion steps</li>
+          <li>Transaction logging to a transactions.csv output file</li>
+        </ul>
+      </section>
+
+      <section id="process">
+        <h2>Implementation Notes</h2>
+        <p>
+          The interface was designed visually using WindowBuilder, then wired to Java event handlers
+          (e.g., ActionListener) so each button triggers the appropriate logic. The project required careful
+          state management for cart progress (current item count, running total, etc.) and consistent updates to GUI fields
+          as the user moved through the order steps.
+        </p>
+        <p>
+          The completed order is recorded by writing transaction lines to a CSV file, reinforcing practical file I/O
+          and output formatting.
+        </p>
+      </section>
+
+      <section id="tools">
+        <h2>Tools & Methods</h2>
+        <p>
+          Java, Swing (JFrame, JPanel, JTextField, JButton, JLabel), Eclipse IDE, WindowBuilder, event-driven programming
+          (ActionListener), input validation, file I/O (CSV writing)
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills Gained</h2>
+        <ul>
+          <li><strong>GUI development:</strong> Building desktop interfaces with Swing and WindowBuilder</li>
+          <li><strong>Event-driven programming:</strong> Connecting buttons and inputs to application logic</li>
+          <li><strong>State management:</strong> Tracking cart items, totals, and workflow steps across the UI</li>
+          <li><strong>Input validation:</strong> Handling invalid values gracefully (quantity, missing fields, etc.)</li>
+          <li><strong>File output:</strong> Writing structured transaction records to a CSV file</li>
+          <li><strong>Debugging UI issues:</strong> Fixing layout/visibility problems between WindowBuilder and runtime</li>
+        </ul>
+      </section>
+
+    </article>
+  </main>
+</body>
+</html>
