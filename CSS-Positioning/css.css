@@ -1,0 +1,104 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+#jumpMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 15%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  background-color: rgb(230, 214, 170);
+}
+
+#jumpMenu br {
+  display: none;
+}
+
+#jumpMenu a {
+  display: flex;
+  align-items: center;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 15%;
+  width: 85%;
+
+  display: flex;
+  align-items: center;
+
+  background-color: rgb(83, 44, 12);
+
+  padding: 12px 40px;
+}
+
+header p {
+  margin: 0;
+  font-size: 34px;
+  font-weight: bold;
+  color: black;
+}
+
+header nav {
+  display: flex;
+  margin-left: auto;
+  padding-right: 50px;
+}
+
+header nav button {
+  margin-left: 12px;
+  padding: 8px 14px;
+
+  border: 2px solid black;
+  background-color: white;
+}
+
+main {
+  margin-left: 15%;
+  width: 85%;
+
+  margin-top: 70px;
+}
+
+main h1 {
+  margin-top: 0;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#container article {
+  width: 300px;
+  width: 300px;
+  margin: 10px;
+
+  background-color: rgb(197, 192, 192);
+  border: solid black;
+}
+
+#thanks {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+
+  padding: 10px;
+
+  border: solid black;
+  background-color: rgb(83, 44, 12);
+  color: white;
+}
