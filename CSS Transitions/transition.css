@@ -1,0 +1,165 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+{
+  box-sizing: border-box;
+}
+
+header p {
+  background-color: rgb(168, 39, 39);
+  text-align: center;
+  margin: 0;
+  padding: 40px 20px;
+  font-size: 30px;
+}
+
+main h1 {
+  text-align: center;
+  margin: 24px 0;
+  font-family: "Times New Roman", serif;
+}
+
+#menuItems {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 15%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: rgb(50, 83, 61); 
+  overflow: hidden;
+}
+
+#menuItems button {
+  width: 100%;
+  border: none;
+
+  background: seagreen;   
+  color: #fff;
+
+  text-align: center;
+  font-size: 16px;
+
+  padding: 12px 10px;
+  cursor: pointer;
+}
+
+#menuItems button:hover {
+  filter: brightness(0.9);
+}
+
+#jumpMenu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  background: #2b333b;
+}
+
+#recentArticles:hover + #jumpMenu,
+#jumpMenu:hover {
+  display: block;
+}
+
+#jumpMenu li a {
+  display: block;           
+  width: 100%;
+
+  text-align: center;
+  text-decoration: none;
+
+  padding: 6px 0;
+  font-size: 14px;
+
+  color: white;           
+}
+
+#jumpMenu li a:hover {
+  background: #050824;      
+  color: rgb(219, 219, 71)           
+}
+
+main {
+  margin-left: 15%;
+  width: 85%;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  padding: 0 10px 30px;
+}
+
+#container article {
+  width: 300px;
+  margin: 10px;
+
+  transition: transform 2s ease;
+}
+
+article p:first-of-type::first-letter {
+  font-family: "Times New Roman", serif;
+  font-size: 36px;
+}
+
+article h2 {
+  margin: 0 0 10px;
+  font-family: "Times New Roman", serif;
+}
+
+article p {
+  color: #ccc;
+  transition: color .2s ease, font-size .2s ease;
+}
+
+#container article:hover {
+  transform: scale(1.15);
+}
+
+#container article:hover h2 {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #000;
+}
+
+#container article:hover p {
+  color: #000;
+  font-size: 1.05em;
+}
+
+a[href*="google.com"]::after {
+  content: url("Images/arrow.png");
+  margin-left: 6px;
+}
+
+#thanks {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+
+  padding: 10px;
+  border: solid black;
+  background-color: skyblue;
+  color: white;
+}
+
+#thanks a {
+  color: #001dff;
+  text-decoration: underline;
+}
+
+footer {
+  padding: 20px 10px;
+}
