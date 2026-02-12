@@ -8,4 +8,5 @@ The course focused on front-end web development fundamentals, including:
 - JavaScript for interactivity and DOM manipulation
 - Basic responsive design principles
 - File organization and version control using Git
+  
 While these projects were completed for academic credit, they demonstrate practical, hands-on technical skills relevant to entry-level IT and web-focused roles.
