@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+header, main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0 10px 0;
+}
+h1 {
+    margin: 0 0 8px 0;
+    font-size: 32px;
+}
+address {
+    font-style: normal;
+}
+header hr {
+    margin-top: 15px;
+}
+address a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 6px 6px 0 0;
+}
+
+address a[href^="mailto"] {
+    color: #003366;
+    font-weight: bold;
+}
+
+address a:not([href^="mailto"]) {
+    background-color: #003366;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+address a:not([href^="mailto"]):hover {
+    background-color: #0055aa;
+}
+
+/* -------- Sections -------- */
+section {
+    background-color: white;
+    margin-top: 18px;
+    padding: 18px;
+    border-radius: 6px;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+
+h3 {
+    margin: 10px 0 3px 0;
+}
+
+/* Lists */
+ul {
+    margin: 8px 0 0 18px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+article {
+    margin-bottom: 14px;
+}
+
+/* Project links (if they are outside a section) */
+main > a {
+    display: inline-block;
+    margin: 6px 0;
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main > a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   MOBILE LAYOUT (Assignment check: width 412px)
+   ========================================================= */
+@media screen and (max-width: 480px) {
+
+    header, main {
+        width: 92%;
+    }
+
+    header {
+        padding: 20px 0 6px 0;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    /* Stack social buttons for mobile */
+    address a:not([href^="mailto"]) {
+        display: block;
+        width: 80%;
+        margin: 8px auto;
+        text-align: center;
+    }
+
+    section {
+        padding: 14px;
+    }
+}
+
+/* =========================================================
+   DESKTOP/LAPTOP LAYOUT (Assignment check: width 1920px)
+   ========================================================= */
+@media screen and (min-width: 1200px) {
+
+    header, main {
+        max-width: 980px;
+    }
+
+    header {
+        padding-top: 40px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    /* Optional: make the Technical Skills section appear in columns on desktop
+       (still basic CSS; no grid required) */
+    /* If your Technical Skills is a UL inside a section, this helps desktop readability */
+    section ul {
+        column-count: 2;
+        column-gap: 50px;
+    }
+
+    /* Keep experience bullets readable */
+    article ul {
+        column-count: 1;
+    }
+}
