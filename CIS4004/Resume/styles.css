@@ -48,7 +48,6 @@ address a:not([href^="mailto"]):hover {
     background-color: #0055aa;
 }
 
-/* -------- Sections -------- */
 section {
     background-color: white;
     margin-top: 18px;
@@ -81,7 +80,6 @@ article {
     margin-bottom: 14px;
 }
 
-/* Project links (if they are outside a section) */
 main > a {
     display: inline-block;
     margin: 6px 0;
@@ -93,10 +91,6 @@ main > a {
 main > a:hover {
     text-decoration: underline;
 }
-
-/* =========================================================
-   MOBILE LAYOUT (Assignment check: width 412px)
-   ========================================================= */
 @media screen and (max-width: 480px) {
 
     header, main {
@@ -110,8 +104,6 @@ main > a:hover {
     h1 {
         font-size: 26px;
     }
-
-    /* Stack social buttons for mobile */
     address a:not([href^="mailto"]) {
         display: block;
         width: 80%;
@@ -124,9 +116,6 @@ main > a:hover {
     }
 }
 
-/* =========================================================
-   DESKTOP/LAPTOP LAYOUT (Assignment check: width 1920px)
-   ========================================================= */
 @media screen and (min-width: 1200px) {
 
     header, main {
@@ -145,16 +134,12 @@ main > a:hover {
         padding: 22px;
     }
 
-    /* Optional: make the Technical Skills section appear in columns on desktop
-       (still basic CSS; no grid required) */
-    /* If your Technical Skills is a UL inside a section, this helps desktop readability */
     section ul {
         column-count: 2;
         column-gap: 50px;
     }
-
-    /* Keep experience bullets readable */
     article ul {
         column-count: 1;
     }
 }
+
