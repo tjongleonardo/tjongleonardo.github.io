@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex API</title>
+    <link rel="stylesheet" href="dex.css">
+</head>
+<body>
+    <div class="pokedex">
+        <div class="pokedex-left">
+            <div class="screen-border">
+                <div class="main-screen">
+                    <img id="pokemon-image" src="" alt="Pokemon Image" style="display: none;">
+                    <p id="pokemon-name">Enter a Pokemon name or ID</p>
+                </div>
+            </div>
+            
+            <div class="input-section">
+                <input type="text" id="pokemon-input" placeholder="Enter Pokemon name or ID">
+                <button id="search-btn">Search</button>
+            </div>
+            
+            <div class="audio-section">
+                <p>Pokemon Cry:</p>
+                <audio id="pokemon-cry" controls></audio>
+            </div>
+            
+            <div class="moves-section">
+                <p>Select Moveset:</p>
+                <select id="move1"><option value="">Select Move 1</option></select>
+                <select id="move2"><option value="">Select Move 2</option></select>
+                <select id="move3"><option value="">Select Move 3</option></select>
+                <select id="move4"><option value="">Select Move 4</option></select>
+            </div>
+            
+            <button id="add-team-btn">Add to Team</button>
+        </div>
+        
+        <div class="pokedex-right">
+            <div class="team-section">
+                <h2>Your Team (<span id="team-count">0</span>/6)</h2>
+                <div id="team-container" class="team-container">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js.js"></script>
+</body>
+</html>
