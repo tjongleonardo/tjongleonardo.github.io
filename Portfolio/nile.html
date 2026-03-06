@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nile.com — GUI Case Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="nile.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="portfolio.html" class="nav-back">Portfolio</a>
+    <span class="nav-title">Nile.com</span>
+    <span class="nav-tag">Java · Swing · GUI</span>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-glow"></div>
+    <p class="hero-eyebrow">Case Study — Java GUI Development</p>
+    <h1>
+      <span class="word-nile">Nile</span><span class="word-dot">.</span>com<br/>
+      (NileDotCom)
+    </h1>
+    <p class="hero-desc">
+      A desktop ordering application built with Java Swing and Eclipse WindowBuilder -
+      simulating a real e-commerce workflow from item search through transaction logging.
+    </p>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <span class="label">Language</span>
+        <span class="value">Java</span>
+      </div>
+      <div class="meta-item">
+        <span class="label">Framework</span>
+        <span class="value">Java Swing</span>
+      </div>
+      <div class="meta-item">
+        <span class="label">IDE</span>
+        <span class="value">Eclipse + WindowBuilder</span>
+      </div>
+      <div class="meta-item">
+        <span class="label">Output</span>
+        <span class="value">Desktop GUI + CSV Logging</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGES -->
+  <div class="images-band">
+    <div class="image-stack">
+      <div class="image-frame reveal">
+        <img src="Images/NileGui.png" alt="Nile.com main ordering screen"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="image-placeholder" style="display:none;">
+          <span class="icon">🖥️</span>
+          <span class="note">NileGui.png — main ordering interface</span>
+        </div>
+        <div class="image-caption">Fig. 1 — Main Ordering Interface</div>
+      </div>
+      <div class="image-frame reveal">
+        <img src="Images/NileT.png" alt="Nile.com transaction output"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="image-placeholder" style="display:none;">
+          <span class="icon">🧾</span>
+          <span class="note">NileT.png — transaction view</span>
+        </div>
+        <div class="image-caption">Fig. 2 — Transaction Output View</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="container">
+
+    <!-- OVERVIEW -->
+    <section class="section" id="overview">
+      <div class="reveal">
+        <div class="section-header">
+          <span class="section-num">01</span>
+          <h2 class="section-title">Overview</h2>
+        </div>
+        <div class="overview-layout">
+          <div class="overview-text">
+            <p>
+              <strong>Nile.com (NileDotCom)</strong> is a desktop GUI application built in Java that simulates
+              a simple online ordering workflow. Users can search for items, enter quantities, review item
+              details and subtotals, add multiple items to a cart, and finalize an order.
+            </p>
+            <p>
+              The project emphasizes building a working GUI using <strong>Eclipse WindowBuilder</strong>
+              while connecting UI actions to backend logic — including calculations, state tracking across
+              workflow steps, and structured file output.
+            </p>
+          </div>
+          <div class="overview-aside">
+            <div class="aside-row">
+              <span class="alabel">Language</span>
+              <span class="avalue">Java</span>
+            </div>
+            <div class="aside-row">
+              <span class="alabel">UI Framework</span>
+              <span class="avalue">Java Swing</span>
+            </div>
+            <div class="aside-row">
+              <span class="alabel">IDE</span>
+              <span class="avalue">Eclipse IDE</span>
+            </div>
+            <div class="aside-row">
+              <span class="alabel">GUI Designer</span>
+              <span class="avalue">WindowBuilder</span>
+            </div>
+            <div class="aside-row">
+              <span class="alabel">Output</span>
+              <span class="avalue">transactions.csv</span>
+            </div>
+            <div class="aside-row">
+              <span class="alabel">Pattern</span>
+              <span class="avalue">Event-Driven (ActionListener)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="reveal">
+        <div class="section-header">
+          <span class="section-num">02</span>
+          <h2 class="section-title">Key Features</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-bullet"></div>
+            <div class="feature-text">
+              <strong>Item Search Workflow</strong>
+              Lookup tied to button click events — fully event-driven UI with ActionListener bindings.
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-bullet"></div>
+            <div class="feature-text">
+              <strong>Quantity &amp; Subtotal Logic</strong>
+              Quantity input fields, real-time item detail display, and running subtotal calculations.
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-bullet"></div>
+            <div class="feature-text">
+              <strong>Multi-Item Cart</strong>
+              Cart display within the GUI supporting multiple items before order completion.
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-bullet"></div>
+            <div class="feature-text">
+              <strong>Order Confirmation</strong>
+              Step-by-step order confirmation and completion flow with clear UI state transitions.
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-bullet"></div>
+            <div class="feature-text">
+              <strong>Transaction Logging</strong>
+              Completed orders written to a <code>transactions.csv</code> file — practical file I/O.
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-bullet"></div>
+            <div class="feature-text">
+              <strong>Input Validation</strong>
+              Graceful handling of invalid values — empty fields, bad quantities, and edge cases.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPLEMENTATION -->
+    <section class="section" id="process">
+      <div class="reveal">
+        <div class="section-header">
+          <span class="section-num">03</span>
+          <h2 class="section-title">Implementation Notes</h2>
+        </div>
+        <div class="impl-layout">
+          <div class="impl-card" data-num="1">
+            <div class="impl-icon">🎨</div>
+            <div class="impl-title">Visual Design with WindowBuilder</div>
+            <div class="impl-desc">
+              The interface was laid out visually using Eclipse's WindowBuilder plugin, allowing
+              drag-and-drop placement of Swing components (JFrame, JPanel, JTextField, JButton, JLabel)
+              before wiring them to logic.
+            </div>
+          </div>
+          <div class="impl-card" data-num="2">
+            <div class="impl-icon">⚡</div>
+            <div class="impl-title">Event-Driven Wiring</div>
+            <div class="impl-desc">
+              Each button was connected to a Java ActionListener, triggering the appropriate logic —
+              search, add to cart, confirm, and finalize. The separation between UI layout and event
+              handling kept the code organized.
+            </div>
+          </div>
+          <div class="impl-card" data-num="3">
+            <div class="impl-icon">🔄</div>
+            <div class="impl-title">State Management</div>
+            <div class="impl-desc">
+              Cart state — item count, running total, current item — had to be carefully tracked across
+              UI interactions. GUI fields update consistently as the user moves through each order step.
+            </div>
+          </div>
+          <div class="impl-card" data-num="4">
+            <div class="impl-icon">📄</div>
+            <div class="impl-title">CSV Transaction Output</div>
+            <div class="impl-desc">
+              On order completion, transaction data is formatted and written to a CSV file using Java
+              file I/O. This reinforced structured output formatting and working with the filesystem
+              from within a GUI application.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="section" id="tools">
+      <div class="reveal">
+        <div class="section-header">
+          <span class="section-num">04</span>
+          <h2 class="section-title">Tools &amp; Methods</h2>
+        </div>
+        <div class="tools-wrap">
+          <span class="tool-chip">Java</span>
+          <span class="tool-chip">Java Swing</span>
+          <span class="tool-chip">JFrame</span>
+          <span class="tool-chip">JPanel</span>
+          <span class="tool-chip">JTextField</span>
+          <span class="tool-chip">JButton</span>
+          <span class="tool-chip">JLabel</span>
+          <span class="tool-chip">Eclipse IDE</span>
+          <span class="tool-chip">WindowBuilder</span>
+          <span class="tool-chip">ActionListener</span>
+          <span class="tool-chip">Event-Driven Programming</span>
+          <span class="tool-chip">Input Validation</span>
+          <span class="tool-chip">File I/O</span>
+          <span class="tool-chip">CSV Writing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="reveal">
+        <div class="section-header">
+          <span class="section-num">05</span>
+          <h2 class="section-title">Skills Gained</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-item-name">GUI Development</div>
+            <div class="skill-item-desc">Building desktop interfaces with Swing and WindowBuilder.</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-name">Event-Driven Programming</div>
+            <div class="skill-item-desc">Connecting buttons and inputs to application logic via ActionListeners.</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-name">State Management</div>
+            <div class="skill-item-desc">Tracking cart items, running totals, and workflow steps across the UI.</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-name">Input Validation</div>
+            <div class="skill-item-desc">Handling invalid values gracefully — empty fields, bad quantities, edge cases.</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-name">File Output (CSV)</div>
+            <div class="skill-item-desc">Writing structured transaction records to a CSV file from within a GUI app.</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-name">Debugging UI Issues</div>
+            <div class="skill-item-desc">Fixing layout and visibility problems between WindowBuilder design and runtime.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /container -->
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div class="cta-text">
+      <h2>View the source code.</h2>
+      <p>Find this project and more on GitHub.</p>
+    </div>
+    <div class="cta-buttons">
+      <a class="btn btn-blue" href="https://github.com/tjongleonardo" target="_blank" rel="noopener">
+        GitHub →
+      </a>
+      <a class="btn btn-ghost" href="portfolio.html">← Back to Portfolio</a>
+    </div>
+  </div>
+
+  <footer>
+    <span>Nile.com — Java GUI Case Study · Leonardo Tjong</span>
+    <span>University of Central Florida</span>
+  </footer>
+
+  <script>
+    document.body.classList.add('js-ready');
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
