@@ -13,7 +13,7 @@
   --text:    #e8eaf0;
   --muted:   #7a8099;
   --mono:    'Space Mono', monospace;
-  --sans:    'Syne', sans-serif;
+  --sans:    'DM Sans', sans-serif;
 }
 
 /* ── RESET ── */
@@ -557,7 +557,6 @@ footer {
 }
 
 /* ── SCROLL REVEAL ── */
-/* Only hide when JS has confirmed it loaded — prevents blank page if JS is slow */
 .js-ready .reveal {
   opacity:    0;
   transform:  translateY(30px);
