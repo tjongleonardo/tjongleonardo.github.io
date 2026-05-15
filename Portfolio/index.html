@@ -1,327 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leonardo Tjong | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:opsz,wght@9..40,400;9..40,700;9..40,800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="portfolio.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:opsz,wght@9..40,400;9..40,700;9..40,800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="portfolio.css" />
 </head>
+
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <div class="nav-logo">LT.Portfolio</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <div class="hero">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <p class="hero-tag">// IT &amp; Computer Science Portfolio</p>
-    <h1>Leonardo<br/><span>Tjong.</span></h1>
-    <p class="hero-sub">
-      IT student at UCF with a minor in Secure Computing &amp; Networks.
-      Building across software, data, cloud, and security. Wherever the problem needs solving.
-    </p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="#contact" class="btn btn-outline">Get in Touch</a>
-    </div>
-  </div>
-
-  <hr class="divider"/>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="reveal">
-      <p class="section-label">// 01 / about</p>
-      <h2 class="section-title">Who I Am</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            I'm an Information Technology student at UCF with hands-on experience across
-            software development, data analytics, cloud infrastructure, and cybersecurity.
-            I pick up new tools fast and bring a detail-oriented approach to whatever I'm working on.
-          </p>
-          <p>
-            From building end-to-end analytics pipelines and deploying machine learning models,
-            to troubleshooting systems and working within secure network environments. I've
-            developed a versatile skill set that translates across a wide range of IT roles.
-          </p>
-          <p>
-            I'm actively seeking opportunities in data analytics, help desk, IT support,
-            cybersecurity, or software development where I can contribute from day one
-            and keep growing.
-          </p>
-        </div>
-        <div class="about-details">
-          <div class="detail-row">
-            <span class="label">University</span>
-            <span class="value">University of Central Florida</span>
-          </div>
-          <div class="detail-row">
-            <span class="label">Major</span>
-            <span class="value">Information Technology</span>
-          </div>
-          <div class="detail-row">
-            <span class="label">Minor</span>
-            <span class="value">Secure Computing &amp; Networks</span>
-          </div>
-          <div class="detail-row">
-            <span class="label">Focus Areas</span>
-            <span class="value">Data · Cloud · Security · Software Dev</span>
-          </div>
-        </div>
-      </div>
+  <!-- START SCREEN OVERLAY -->
+  <section id="start-screen" class="start-screen" aria-label="Start Screen">
+    <div class="start-screen-bg halftone-bg"></div>
+    <img src="Images/r34.png" class="bg-car bg-car-1" aria-hidden="true" alt="" />
+    <div class="start-screen-content">
+      <h1 class="start-logo">
+        <span class="logo-first">My</span>
+        <span class="logo-last">Persona</span>
+      </h1>
+      <p class="press-any-button" aria-live="polite">Press Any Button</p>
     </div>
   </section>
 
-  <hr class="divider"/>
+  <!-- TRANSITION ASSET -->
+  <img id="transition-car" src="Images/r34.png" alt="R34 Transition" class="transition-car" />
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="reveal">
-      <p class="section-label">// 02 / skills</p>
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon">🐍</div>
-          <div class="skill-name">Python</div>
-          <div class="skill-desc">Data analysis, ML pipelines, automation, and end-to-end analytics workflows.</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">☕</div>
-          <div class="skill-name">Java</div>
-          <div class="skill-desc">Object-oriented programming, data structures, and algorithms.</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">🌐</div>
-          <div class="skill-name">HTML / CSS</div>
-          <div class="skill-desc">Semantic markup, responsive design, and accessible UI.</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">⚙️</div>
-          <div class="skill-name">C</div>
-          <div class="skill-desc">Low-level systems programming, memory management, OS concepts.</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">🗄️</div>
-          <div class="skill-name">SQL</div>
-          <div class="skill-desc">Querying, aggregation, joins, and data extraction for reporting and analysis.</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">📊</div>
-          <div class="skill-name">Data Visualization</div>
-          <div class="skill-desc">Executive dashboards and insight reporting using Matplotlib, Seaborn, and Pandas.</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">☁️</div>
-          <div class="skill-name">AWS</div>
-          <div class="skill-desc">Cloud foundations, security, and deployment. AWS certified.</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">🔒</div>
-          <div class="skill-name">Cybersecurity</div>
-          <div class="skill-desc">Secure computing, networking protocols, and threat mitigation.</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">🖥️</div>
-          <div class="skill-name">Hardware &amp; IT Support</div>
-          <div class="skill-desc">Installation, troubleshooting, and repair of hardware/software.</div>
+  <!-- MAIN CONTENT WRAPPER -->
+  <main id="main-content" class="main-content hidden">
+
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo">LT.Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="halftone-bg"></div>
+      <div class="hero-content">
+        <p class="hero-tag">// IT &amp; Computer Science Portfolio</p>
+        <h1>Leonardo<br /><span>Tjong.</span></h1>
+        <p class="hero-sub">
+          IT student at UCF with a minor in Secure Computing &amp; Networks.
+          Building across software, data, cloud, and security. Wherever the problem needs solving.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary"><span class="btn-inner">View Projects</span></a>
+          <a href="#contact" class="btn btn-outline"><span class="btn-inner">Get in Touch</span></a>
         </div>
       </div>
     </div>
-  </section>
 
-  <hr class="divider"/>
+    <hr class="divider" />
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="reveal">
-      <p class="section-label">// 03 / experience</p>
-      <h2 class="section-title">Work Experience</h2>
-      <div class="experience-card">
-        <div class="exp-header">
-          <div>
-            <div class="exp-title">Machine Learning Intern</div>
-            <div class="exp-company">AI Camp</div>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="reveal">
+        <p class="section-label">// 01 / about</p>
+        <h2 class="section-title">Who I Am</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm an Information Technology student at UCF with hands-on experience across
+              software development, data analytics, cloud infrastructure, and cybersecurity.
+              I pick up new tools fast and bring a detail-oriented approach to whatever I'm working on.
+            </p>
+            <p>
+              From building end-to-end analytics pipelines and deploying machine learning models,
+              to troubleshooting systems and working within secure network environments. I've
+              developed a versatile skill set that translates across a wide range of IT roles.
+            </p>
+            <p>
+              I'm actively seeking opportunities in data analytics, help desk, IT support,
+              cybersecurity, or software development where I can contribute from day one
+              and keep growing.
+            </p>
           </div>
-          <div class="exp-date">June 2022 – July 2022</div>
-        </div>
-        <ul class="exp-list">
-          <li>Designed and developed front and back ends of AI-powered web projects using Python, HTML, and CSS.</li>
-          <li>Built four deep learning and computer vision programs to detect objects of interest, identify issues, and locate bugs in a team environment.</li>
-          <li>Engineered and deployed two machine learning models with real-world applications, including a parking space identification system.</li>
-          <li>Enhanced proficiency in machine learning workflows and web development tooling.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider"/>
-
-  <!-- CERTIFICATIONS -->
-  <section id="certifications">
-    <div class="reveal">
-      <p class="section-label">// 04 / certifications</p>
-      <h2 class="section-title">Certifications</h2>
-      <div class="certs-grid">
-        <div class="cert-card">
-          <div class="cert-icon">☁️</div>
-          <div>
-            <div class="cert-name">AWS Academy Cloud Foundations</div>
-            <div class="cert-issuer">Amazon Web Services</div>
-          </div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon">🔐</div>
-          <div>
-            <div class="cert-name">AWS Academy Cloud Security Foundations</div>
-            <div class="cert-issuer">Amazon Web Services</div>
-          </div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon">🏅</div>
-          <div>
-            <div class="cert-name">AWS Cloud Certifications</div>
-            <div class="cert-issuer">Amazon Web Services · Verified on Credly</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider"/>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="reveal">
-      <p class="section-label">// 05 / projects</p>
-      <h2 class="section-title">Relevant Projects</h2>
-      <div class="projects-grid">
-
-        <a class="project-card" href="KnightMaps.html" target="_blank" rel="noopener">
-          <div class="project-num">01</div>
-          <div class="project-name">KnightMaps</div>
-          <div class="project-desc">
-            A Human-Computer Interaction project focused on intuitive campus navigation
-            and UX design for UCF students.
-          </div>
-          <div class="project-arrow">↗</div>
-        </a>
-
-        <a class="project-card" href="nile.html" target="_blank" rel="noopener">
-          <div class="project-num">02</div>
-          <div class="project-name">Nile.com</div>
-          <div class="project-desc">
-            A desktop ordering application built with Java Swing and Eclipse WindowBuilder -
-            simulating a real e-commerce workflow from item search through transaction logging.
-          </div>
-          <div class="project-arrow">↗</div>
-        </a>
-
-        <a class="project-card" href="https://github.com/tjongleonardo/healthcare-dataset-analytics" target="_blank" rel="noopener">
-          <div class="project-num">03</div>
-          <div class="project-name">Healthcare Dataset Analytics</div>
-          <div class="project-desc">
-            End-to-end analytics pipeline investigating hospital billing patterns, length of stay,
-            and operational cost drivers using Python, Pandas, and Matplotlib.
-          </div>
-          <div class="project-arrow">↗</div>
-        </a>
-
-        <a class="project-card" href="https://github.com/tjongleonardo" target="_blank" rel="noopener">
-          <div class="project-num">04</div>
-          <div class="project-name">ML &amp; Computer Vision Models</div>
-          <div class="project-desc">
-            Deep learning programs built during the AI Camp internship: object detection,
-            bug identification, and real-world parking space recognition.
-          </div>
-          <div class="project-arrow">↗</div>
-        </a>
-
-        <a class="project-card" href="https://github.com/tjongleonardo" target="_blank" rel="noopener">
-          <div class="project-num">05</div>
-          <div class="project-name">More on GitHub →</div>
-          <div class="project-desc">
-            Explore all repositories including coursework, personal experiments,
-            and open-source contributions.
-          </div>
-          <div class="project-arrow">↗</div>
-        </a>
-
-
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider"/>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="reveal">
-      <p class="section-label">// 06 / contact</p>
-      <h2 class="section-title">Get In Touch</h2>
-      <div class="contact-wrapper">
-        <div class="contact-left">
-          <h2>Let's work<br/>together.</h2>
-          <p>
-            I'm open to data analytics, help desk, IT support, cybersecurity, cloud, and
-            software development roles. Whether it's a full-time position, internship,
-            or just a conversation, reach out.
-          </p>
-        </div>
-        <div class="contact-links">
-          <a class="contact-link" href="https://www.linkedin.com/in/leonardo-tjong-90444035a/" target="_blank" rel="noopener">
-            <span class="contact-link-icon">💼</span>
-            <div>
-              <span class="contact-link-label">LinkedIn</span>
-              <span class="contact-link-value">leonardo-tjong</span>
+          <div class="about-details">
+            <div class="detail-row">
+              <span class="label">University</span>
+              <span class="value">University of Central Florida</span>
             </div>
-          </a>
-          <a class="contact-link" href="https://github.com/tjongleonardo" target="_blank" rel="noopener">
-            <span class="contact-link-icon">🐙</span>
-            <div>
-              <span class="contact-link-label">GitHub</span>
-              <span class="contact-link-value">tjongleonardo</span>
+            <div class="detail-row">
+              <span class="label">Major</span>
+              <span class="value">Information Technology</span>
             </div>
-          </a>
-          <a class="contact-link" href="https://www.credly.com/users/leonardo-tjong" target="_blank" rel="noopener">
-            <span class="contact-link-icon">🏅</span>
-            <div>
-              <span class="contact-link-label">Credly</span>
-              <span class="contact-link-value">leonardo-tjong</span>
+            <div class="detail-row">
+              <span class="label">Minor</span>
+              <span class="value">Secure Computing &amp; Networks</span>
             </div>
-          </a>
-          <a class="contact-link" href="mailto:leonardo.tjong.28@gmail.com">
-            <span class="contact-link-icon">✉️</span>
-            <div>
-              <span class="contact-link-label">Email</span>
-              <span class="contact-link-value">leonardo.tjong.28@gmail.com</span>
+            <div class="detail-row">
+              <span class="label">Focus Areas</span>
+              <span class="value">Data · Cloud · Security · Software Dev</span>
             </div>
-          </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <p>© 2026 Leonardo Tjong. Built with purpose. Designed to impress.</p>
-  </footer>
+    <hr class="divider" />
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="reveal">
+        <p class="section-label">// 02 / skills</p>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">🐍</div>
+            <div class="skill-name">Python</div>
+            <div class="skill-desc">Data analysis, ML pipelines, automation, and end-to-end analytics workflows.</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">☕</div>
+            <div class="skill-name">Java</div>
+            <div class="skill-desc">Object-oriented programming, data structures, and algorithms.</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🌐</div>
+            <div class="skill-name">HTML / CSS</div>
+            <div class="skill-desc">Semantic markup, responsive design, and accessible UI.</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">⚙️</div>
+            <div class="skill-name">C</div>
+            <div class="skill-desc">Low-level systems programming, memory management, OS concepts.</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🗄️</div>
+            <div class="skill-name">SQL</div>
+            <div class="skill-desc">Querying, aggregation, joins, and data extraction for reporting and analysis.</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">📊</div>
+            <div class="skill-name">Data Visualization</div>
+            <div class="skill-desc">Executive dashboards and insight reporting using Matplotlib, Seaborn, and Pandas.
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">☁️</div>
+            <div class="skill-name">AWS</div>
+            <div class="skill-desc">Cloud foundations, security, and deployment. AWS certified.</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🔒</div>
+            <div class="skill-name">Cybersecurity</div>
+            <div class="skill-desc">Secure computing, networking protocols, and threat mitigation.</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🖥️</div>
+            <div class="skill-name">Hardware &amp; IT Support</div>
+            <div class="skill-desc">Installation, troubleshooting, and repair of hardware/software.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="reveal">
+        <p class="section-label">// 03 / experience</p>
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-title">Machine Learning Intern</div>
+              <div class="exp-company">AI Camp</div>
+            </div>
+            <div class="exp-date">June 2022 – July 2022</div>
+          </div>
+          <ul class="exp-list">
+            <li>Designed and developed front and back ends of AI-powered web projects using Python, HTML, and CSS.</li>
+            <li>Built four deep learning and computer vision programs to detect objects of interest, identify issues,
+              and locate bugs in a team environment.</li>
+            <li>Engineered and deployed two machine learning models with real-world applications, including a parking
+              space identification system.</li>
+            <li>Enhanced proficiency in machine learning workflows and web development tooling.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <div class="reveal">
+        <p class="section-label">// 04 / certifications</p>
+        <h2 class="section-title">Certifications</h2>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-icon">☁️</div>
+            <div>
+              <div class="cert-name">AWS Academy Cloud Foundations</div>
+              <div class="cert-issuer">Amazon Web Services</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🔐</div>
+            <div>
+              <div class="cert-name">AWS Academy Cloud Security Foundations</div>
+              <div class="cert-issuer">Amazon Web Services</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🏅</div>
+            <div>
+              <div class="cert-name">AWS Cloud Certifications</div>
+              <div class="cert-issuer">Amazon Web Services · Verified on Credly</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="reveal">
+        <p class="section-label">// 05 / projects</p>
+        <h2 class="section-title">Relevant Projects</h2>
+        <div class="projects-grid">
+
+          <a class="project-card" href="KnightMaps.html" target="_blank" rel="noopener">
+            <div class="project-num">01</div>
+            <div class="project-name">KnightMaps</div>
+            <div class="project-desc">
+              A Human-Computer Interaction project focused on intuitive campus navigation
+              and UX design for UCF students.
+            </div>
+            <div class="project-arrow">↗</div>
+          </a>
+
+          <a class="project-card" href="nile.html" target="_blank" rel="noopener">
+            <div class="project-num">02</div>
+            <div class="project-name">Nile.com</div>
+            <div class="project-desc">
+              A desktop ordering application built with Java Swing and Eclipse WindowBuilder -
+              simulating a real e-commerce workflow from item search through transaction logging.
+            </div>
+            <div class="project-arrow">↗</div>
+          </a>
+
+          <a class="project-card" href="https://github.com/tjongleonardo/healthcare-dataset-analytics" target="_blank"
+            rel="noopener">
+            <div class="project-num">03</div>
+            <div class="project-name">Healthcare Dataset Analytics</div>
+            <div class="project-desc">
+              End-to-end analytics pipeline investigating hospital billing patterns, length of stay,
+              and operational cost drivers using Python, Pandas, and Matplotlib.
+            </div>
+            <div class="project-arrow">↗</div>
+          </a>
+
+          <a class="project-card" href="https://github.com/tjongleonardo" target="_blank" rel="noopener">
+            <div class="project-num">04</div>
+            <div class="project-name">ML &amp; Computer Vision Models</div>
+            <div class="project-desc">
+              Deep learning programs built during the AI Camp internship: object detection,
+              bug identification, and real-world parking space recognition.
+            </div>
+            <div class="project-arrow">↗</div>
+          </a>
+
+          <a class="project-card" href="https://github.com/tjongleonardo" target="_blank" rel="noopener">
+            <div class="project-num">05</div>
+            <div class="project-name">More on GitHub →</div>
+            <div class="project-desc">
+              Explore all repositories including coursework, personal experiments,
+              and open-source contributions.
+            </div>
+            <div class="project-arrow">↗</div>
+          </a>
+
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="reveal">
+        <p class="section-label">// 06 / contact</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+          <div class="contact-left">
+            <h2>Let's work<br />together.</h2>
+            <p>
+              I'm open to data analytics, help desk, IT support, cybersecurity, cloud, and
+              software development roles. Whether it's a full-time position, internship,
+              or just a conversation, reach out.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a class="contact-link" href="https://www.linkedin.com/in/leonardo-tjong-90444035a/" target="_blank"
+              rel="noopener">
+              <span class="contact-link-icon">💼</span>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">leonardo-tjong</span>
+              </div>
+            </a>
+            <a class="contact-link" href="https://github.com/tjongleonardo" target="_blank" rel="noopener">
+              <span class="contact-link-icon">🐙</span>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">tjongleonardo</span>
+              </div>
+            </a>
+            <a class="contact-link" href="https://www.credly.com/users/leonardo-tjong" target="_blank" rel="noopener">
+              <span class="contact-link-icon">🏅</span>
+              <div>
+                <span class="contact-link-label">Credly</span>
+                <span class="contact-link-value">leonardo-tjong</span>
+              </div>
+            </a>
+            <a class="contact-link" href="mailto:leonardo.tjong.28@gmail.com">
+              <span class="contact-link-icon">✉️</span>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">leonardo.tjong.28@gmail.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Leonardo Tjong. Persona 5 Inspired Page</p>
+    </footer>
+
+  </main> <!-- END MAIN CONTENT -->
 
   <script>
     document.body.classList.add('js-ready');
 
+    // --- BACKGROUND CARS MOUSE FOLLOW LOGIC ---
+    const bgCar1 = document.querySelector('.bg-car-1');
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+
+    // Start off screen
+    let car1X = -500;
+    let car1Y = -500;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    let rafId;
+    function animateCars() {
+      const startScreenActive = document.getElementById('start-screen');
+      if (!startScreenActive) return;
+
+      const speed1 = 0.03;
+
+      car1X += (mouseX - car1X) * speed1;
+      car1Y += (mouseY - car1Y) * speed1;
+
+      const dx1 = mouseX - car1X;
+      const dy1 = mouseY - car1Y;
+      const angle1 = Math.atan2(dy1, dx1) * (180 / Math.PI);
+
+      // Rotate to follow cursor. Image natively faces left (180deg). 
+      // If moving right (dx > 0), scaleY(-1) keeps it upright.
+      if (bgCar1) {
+        bgCar1.style.transform = `translate(${car1X}px, ${car1Y}px) translate(-50%, -50%) rotate(${angle1 - 180}deg) scaleY(${dx1 < 0 ? 1 : -1})`;
+      }
+
+      rafId = requestAnimationFrame(animateCars);
+    }
+
+    rafId = requestAnimationFrame(animateCars);
+
+    // --- START SCREEN LOGIC ---
+    const startScreen = document.getElementById('start-screen');
+    const mainContent = document.getElementById('main-content');
+
+    function initPortfolio() {
+      if (!startScreen) return;
+
+      const car = document.getElementById('transition-car');
+
+      // Remove event listeners
+      window.removeEventListener('click', initPortfolio);
+      window.removeEventListener('keydown', initPortfolio);
+      window.removeEventListener('touchstart', initPortfolio);
+
+      if (car) {
+        car.classList.add('car-zoom');
+
+        // Wait for car to cover the screen before shattering
+        setTimeout(() => {
+          startScreen.classList.add('shatter-exit');
+          mainContent.classList.remove('hidden');
+          mainContent.classList.add('reveal-main');
+        }, 400);
+
+        // Cleanup DOM
+        setTimeout(() => {
+          startScreen.remove();
+          car.remove();
+        }, 1200);
+      } else {
+        startScreen.classList.add('shatter-exit');
+        mainContent.classList.remove('hidden');
+        mainContent.classList.add('reveal-main');
+        setTimeout(() => startScreen.remove(), 800);
+      }
+    }
+
+    // Listen for interaction
+    if (startScreen) {
+      window.addEventListener('click', initPortfolio);
+      window.addEventListener('keydown', initPortfolio);
+      window.addEventListener('touchstart', initPortfolio);
+    }
+
+    // --- SCROLL REVEAL LOGIC ---
     const reveals = document.querySelectorAll('.reveal');
 
     const observer = new IntersectionObserver((entries) => {
@@ -340,4 +456,5 @@
   </script>
 
 </body>
+
 </html>
